@@ -1,0 +1,483 @@
+{
+  "dataset": "MIT-BIH Arrhythmia Database 1.0.0",
+  "configuration": {
+    "lead": "MLII",
+    "sample_rate_hz": 360,
+    "filter_order": 4,
+    "filter_band_hz": [
+      0.5,
+      40.0
+    ],
+    "window_samples_relative_to_annotation": [
+      -72,
+      144
+    ],
+    "window_convention": "start inclusive, stop exclusive",
+    "test_fraction_of_subjects": 0.25,
+    "seed": 42,
+    "trees": 128,
+    "minimum_samples_per_leaf": 5,
+    "class_weight": "balanced"
+  },
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "wfdb": "4.3.1",
+    "scikit_learn": "1.7.2",
+    "matplotlib": "3.10.6"
+  },
+  "train": {
+    "subjects": [
+      "100",
+      "101",
+      "103",
+      "107",
+      "109",
+      "112",
+      "113",
+      "114",
+      "116",
+      "117",
+      "118",
+      "119",
+      "121",
+      "122",
+      "123",
+      "124",
+      "200",
+      "201/202",
+      "203",
+      "208",
+      "209",
+      "210",
+      "212",
+      "213",
+      "214",
+      "215",
+      "217",
+      "220",
+      "223",
+      "228",
+      "231",
+      "233",
+      "234"
+    ],
+    "records": [
+      "100",
+      "101",
+      "103",
+      "107",
+      "109",
+      "112",
+      "113",
+      "114",
+      "116",
+      "117",
+      "118",
+      "119",
+      "121",
+      "122",
+      "123",
+      "124",
+      "200",
+      "201",
+      "202",
+      "203",
+      "208",
+      "209",
+      "210",
+      "212",
+      "213",
+      "214",
+      "215",
+      "217",
+      "220",
+      "223",
+      "228",
+      "231",
+      "233",
+      "234"
+    ],
+    "n": 56014,
+    "v": 5906
+  },
+  "test": {
+    "subjects": [
+      "105",
+      "106",
+      "108",
+      "111",
+      "115",
+      "205",
+      "207",
+      "219",
+      "221",
+      "222",
+      "230"
+    ],
+    "records": [
+      "105",
+      "106",
+      "108",
+      "111",
+      "115",
+      "205",
+      "207",
+      "219",
+      "221",
+      "222",
+      "230"
+    ],
+    "n": 18708,
+    "v": 1216
+  },
+  "target_labels": [
+    "N",
+    "V"
+  ],
+  "excluded_records": {
+    "102": "MLII lead unavailable",
+    "104": "MLII lead unavailable",
+    "232": "No eligible target heartbeats after window/RR checks"
+  },
+  "record_counts": {
+    "100": {
+      "beat_annotations": 2273,
+      "target_annotations": 2240,
+      "n": 2237,
+      "v": 1
+    },
+    "101": {
+      "beat_annotations": 1865,
+      "target_annotations": 1860,
+      "n": 1858,
+      "v": 0
+    },
+    "103": {
+      "beat_annotations": 2084,
+      "target_annotations": 2082,
+      "n": 2080,
+      "v": 0
+    },
+    "105": {
+      "beat_annotations": 2572,
+      "target_annotations": 2567,
+      "n": 2524,
+      "v": 41
+    },
+    "106": {
+      "beat_annotations": 2027,
+      "target_annotations": 2027,
+      "n": 1505,
+      "v": 520
+    },
+    "107": {
+      "beat_annotations": 2137,
+      "target_annotations": 59,
+      "n": 0,
+      "v": 59
+    },
+    "108": {
+      "beat_annotations": 1763,
+      "target_annotations": 1756,
+      "n": 1737,
+      "v": 17
+    },
+    "109": {
+      "beat_annotations": 2532,
+      "target_annotations": 38,
+      "n": 0,
+      "v": 38
+    },
+    "111": {
+      "beat_annotations": 2124,
+      "target_annotations": 1,
+      "n": 0,
+      "v": 1
+    },
+    "112": {
+      "beat_annotations": 2539,
+      "target_annotations": 2537,
+      "n": 2535,
+      "v": 0
+    },
+    "113": {
+      "beat_annotations": 1795,
+      "target_annotations": 1789,
+      "n": 1787,
+      "v": 0
+    },
+    "114": {
+      "beat_annotations": 1879,
+      "target_annotations": 1863,
+      "n": 1818,
+      "v": 43
+    },
+    "115": {
+      "beat_annotations": 1953,
+      "target_annotations": 1953,
+      "n": 1951,
+      "v": 0
+    },
+    "116": {
+      "beat_annotations": 2412,
+      "target_annotations": 2411,
+      "n": 2300,
+      "v": 109
+    },
+    "117": {
+      "beat_annotations": 1535,
+      "target_annotations": 1534,
+      "n": 1532,
+      "v": 0
+    },
+    "118": {
+      "beat_annotations": 2278,
+      "target_annotations": 16,
+      "n": 0,
+      "v": 16
+    },
+    "119": {
+      "beat_annotations": 1987,
+      "target_annotations": 1987,
+      "n": 1541,
+      "v": 444
+    },
+    "121": {
+      "beat_annotations": 1863,
+      "target_annotations": 1862,
+      "n": 1859,
+      "v": 1
+    },
+    "122": {
+      "beat_annotations": 2476,
+      "target_annotations": 2476,
+      "n": 2474,
+      "v": 0
+    },
+    "123": {
+      "beat_annotations": 1518,
+      "target_annotations": 1518,
+      "n": 1513,
+      "v": 3
+    },
+    "124": {
+      "beat_annotations": 1619,
+      "target_annotations": 47,
+      "n": 0,
+      "v": 47
+    },
+    "200": {
+      "beat_annotations": 2601,
+      "target_annotations": 2569,
+      "n": 1742,
+      "v": 825
+    },
+    "201": {
+      "beat_annotations": 1963,
+      "target_annotations": 1823,
+      "n": 1623,
+      "v": 198
+    },
+    "202": {
+      "beat_annotations": 2136,
+      "target_annotations": 2080,
+      "n": 2059,
+      "v": 19
+    },
+    "203": {
+      "beat_annotations": 2980,
+      "target_annotations": 2973,
+      "n": 2527,
+      "v": 444
+    },
+    "205": {
+      "beat_annotations": 2656,
+      "target_annotations": 2642,
+      "n": 2569,
+      "v": 71
+    },
+    "207": {
+      "beat_annotations": 1860,
+      "target_annotations": 105,
+      "n": 0,
+      "v": 105
+    },
+    "208": {
+      "beat_annotations": 2955,
+      "target_annotations": 2578,
+      "n": 1585,
+      "v": 992
+    },
+    "209": {
+      "beat_annotations": 3005,
+      "target_annotations": 2622,
+      "n": 2619,
+      "v": 1
+    },
+    "210": {
+      "beat_annotations": 2650,
+      "target_annotations": 2617,
+      "n": 2421,
+      "v": 194
+    },
+    "212": {
+      "beat_annotations": 2748,
+      "target_annotations": 923,
+      "n": 922,
+      "v": 0
+    },
+    "213": {
+      "beat_annotations": 3251,
+      "target_annotations": 2861,
+      "n": 2639,
+      "v": 220
+    },
+    "214": {
+      "beat_annotations": 2262,
+      "target_annotations": 256,
+      "n": 0,
+      "v": 256
+    },
+    "215": {
+      "beat_annotations": 3363,
+      "target_annotations": 3359,
+      "n": 3193,
+      "v": 164
+    },
+    "217": {
+      "beat_annotations": 2208,
+      "target_annotations": 406,
+      "n": 244,
+      "v": 162
+    },
+    "219": {
+      "beat_annotations": 2154,
+      "target_annotations": 2146,
+      "n": 2080,
+      "v": 64
+    },
+    "220": {
+      "beat_annotations": 2048,
+      "target_annotations": 1954,
+      "n": 1952,
+      "v": 0
+    },
+    "221": {
+      "beat_annotations": 2427,
+      "target_annotations": 2427,
+      "n": 2029,
+      "v": 396
+    },
+    "222": {
+      "beat_annotations": 2483,
+      "target_annotations": 2062,
+      "n": 2060,
+      "v": 0
+    },
+    "223": {
+      "beat_annotations": 2605,
+      "target_annotations": 2502,
+      "n": 2027,
+      "v": 473
+    },
+    "228": {
+      "beat_annotations": 2053,
+      "target_annotations": 2050,
+      "n": 1686,
+      "v": 362
+    },
+    "230": {
+      "beat_annotations": 2256,
+      "target_annotations": 2256,
+      "n": 2253,
+      "v": 1
+    },
+    "231": {
+      "beat_annotations": 1571,
+      "target_annotations": 316,
+      "n": 314,
+      "v": 2
+    },
+    "233": {
+      "beat_annotations": 3079,
+      "target_annotations": 3061,
+      "n": 2229,
+      "v": 830
+    },
+    "234": {
+      "beat_annotations": 2753,
+      "target_annotations": 2703,
+      "n": 2698,
+      "v": 3
+    }
+  },
+  "models": {
+    "morphology": {
+      "feature_count": 22,
+      "precision": 0.5328916232844297,
+      "recall": 0.9259868421052632,
+      "f1": 0.6764794232502253,
+      "accuracy": 0.9459445894398715,
+      "confusion_matrix": [
+        [
+          17721,
+          987
+        ],
+        [
+          90,
+          1126
+        ]
+      ]
+    },
+    "rr": {
+      "feature_count": 3,
+      "precision": 0.4862778730703259,
+      "recall": 0.9325657894736842,
+      "f1": 0.6392333709131905,
+      "accuracy": 0.9357558723147962,
+      "confusion_matrix": [
+        [
+          17510,
+          1198
+        ],
+        [
+          82,
+          1134
+        ]
+      ]
+    },
+    "combined": {
+      "feature_count": 25,
+      "precision": 0.6616628175519631,
+      "recall": 0.9424342105263158,
+      "f1": 0.7774762550881954,
+      "accuracy": 0.9670748845613331,
+      "confusion_matrix": [
+        [
+          18122,
+          586
+        ],
+        [
+          70,
+          1146
+        ]
+      ]
+    }
+  },
+  "error_examples": {
+    "false_positive": {
+      "record": "105",
+      "sample": 384684,
+      "previous_rr_s": 0.7055555555555556,
+      "next_rr_s": 0.675
+    },
+    "false_negative": {
+      "record": "106",
+      "sample": 32867,
+      "previous_rr_s": 0.5555555555555556,
+      "next_rr_s": 0.49444444444444446
+    }
+  }
+}
